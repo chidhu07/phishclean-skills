@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "phishclean",
+  "version": "1.0.0",
+  "description": "Check links, emails, email headers, JWTs, web pages and source code for phishing and leaked secrets with PhishClean.",
+  "author": {
+    "name": "PhishClean",
+    "url": "https://www.phishclean.com"
+  },
+  "homepage": "https://www.phishclean.com/developers",
+  "repository": "https://github.com/chidhu07/phishclean-skills",
+  "license": "MIT",
+  "keywords": ["phishing", "security", "scam", "email", "jwt", "secrets", "mcp"],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "phishclean": { "trust": "untrusted" }
+      }
+    }
+  }
+}
